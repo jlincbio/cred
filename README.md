@@ -6,7 +6,7 @@ Committed April 10, 2019
 
 ### Installation
 
-CRED adheres requires a compatible compiler (e.g. GCC), and utilizes [HTSlib](http://www.htslib.org/) to process BAM files. Please clone the repo inside CRED before compiling. Additionally, `make` on certain macOS systems may not automatically compile HTSLib with CRED, an additional call of `make` within `htslib/` may be required in some cases.
+CRED adheres requires a compatible compiler (e.g. GCC), and utilizes [HTSlib](http://www.htslib.org/) to process BAM files. Please clone the repo inside CRED before compiling. In some cases, e.g. certain macOS systems, an additional call of `make` within `htslib/` may be required to complete compilation.
 
 Use `PREFIX` to specify a directory to install CRED with `make install`:
 
