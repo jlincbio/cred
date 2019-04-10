@@ -64,7 +64,7 @@ Optional :
   -k                 Evaluate site significance with Kolmogorov-Smirnov
 Reminders:
    1. BAM files must be sorted.
-   2. Use a pipe (\">\") to capture CRED output.
+   2. Use a pipe (">") to capture CRED output.
 ```
 
 
