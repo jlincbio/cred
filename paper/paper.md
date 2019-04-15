@@ -10,20 +10,18 @@ authors:
    affiliation: "1, 2"
  - name: Tony Kuo
    orcid: 0000-0003-2358-7919
-   affiliation: 2
+   affiliation: "2"
  - name: Paul Horton
    orcid: 0000-0002-0916-7339
-   affiliation: 3
+   affiliation: "3"
  - name: Hiroki Nagase
    orcid: 0000-0002-3992-5399
-   affiliation: 1
+   affiliation: "1"
 affiliations:
  - name: Laboratory of Cancer Genetics, Chiba Cancer Center Research Institute, Chuo-ku, Chiba, Japan
    index: 1
-affiliations:
  - name: Artificial Intelligence Research Center, National Institute of Advanced Industrial Science and Technology (AIST), Koto-ku, Tokyo, Japan
    index: 2
-affiliations:
  - name: Institute of Medical Informatics and the Department of Computer Science and Information Engineering, National Cheng Kung University, Tainan, Taiwan
    index: 3
 date: 10 April 2019
