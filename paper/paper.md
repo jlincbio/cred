@@ -7,13 +7,13 @@ tags:
 authors:
  - name: Jason Lin
    orcid: 0000-0002-8086-3185
-   affiliation: 1 2
+   affiliation: "1 2"
  - name: Tony Kuo
    orcid: 0000-0003-2358-7919
    affiliation: 2
  - name: Paul Horton
    orcid: 0000-0002-0916-7339
-   affiliation: 3 4
+   affiliation: 3
  - name: Hiroki Nagase
    orcid: 0000-0002-3992-5399
    affiliation: 1
@@ -24,11 +24,8 @@ affiliations:
  - name: Artificial Intelligence Research Center, National Institute of Advanced Industrial Science and Technology (AIST), Koto-ku, Tokyo, Japan
    index: 2
 affiliations:
- - name: Institute of Medical Informatics, National Cheng Kung University, Tainan, Taiwan
+ - name: Institute of Medical Informatics and the Department of Computer Science and Information Engineering, National Cheng Kung University, Tainan, Taiwan
    index: 3
-affiliations:
- - name: Department of Computer Science and Information Engineering, National Cheng Kung University, Tainan, Taiwan
-   index: 4
 date: 10 April 2019
 bibliography: paper.bib
 ---
