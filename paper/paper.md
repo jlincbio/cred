@@ -7,7 +7,7 @@ tags:
 authors:
  - name: Jason Lin
    orcid: 0000-0002-8086-3185
-   affiliation: "1 2"
+   affiliation: "1, 2"
  - name: Tony Kuo
    orcid: 0000-0003-2358-7919
    affiliation: 2
