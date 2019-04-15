@@ -6,7 +6,7 @@ Committed April 10, 2019
 
 ### Installation
 
-CRED adheres requires a compatible compiler (e.g. GCC), and utilizes [HTSlib](http://www.htslib.org/) to process BAM files. Please clone the repo inside CRED before compiling. Additionally, `make` on certain macOS systems may not automatically compile HTSLib with CRED, an additional call of `make` within `htslib/` may be required in some cases.
+CRED requires a compatible compiler (e.g. GCC), and utilizes [HTSlib](http://www.htslib.org/) to process BAM files. Please clone the repo inside CRED before compiling. In some cases, e.g. certain macOS systems, an additional call of `make` within `htslib/` may be required to complete compilation.
 
 Use `PREFIX` to specify a directory to install CRED with `make install`:
 
@@ -43,7 +43,7 @@ Reminders:
 * BAM files for the treatment and control BAM's, respectively: use `-t` and `-c` to specify the pair. BAM's should be aligned, coordinate-sorted AND indexed (both .bam and .bam.bai should be present).
 * Quality score cutoff (MAPQ, option `-q`): this is the minimum required mapping quality score as defined in the SAM format specification. CRED defaults to 30. 
 * Significance (alpha) level (option `-p`): please specify this either as a decimal (e.g. `0.0001`) or a fraction (e.g. `1/10000`). CRED will check all regions against this cutoff and output only features more significant than this predefined alpha level.
-* Size of sliding windows may also be adjusted with option `-w`; defaults to 1200 bp (maximum size used in Lin et. al, PLOS 2016).
+* Size of sliding windows may also be adjusted with option `-w`; defaults to 1200 bp (maximum size used in Lin et al. PLoS ONE 2016).
 * Method of evaluating the significance of enrichment may also be modified from Welch's t-test (default) to Kolmogorov-Smirnov by the `-k` toggle.
 
 A helper program, "Batch CRED" or `BCRED`, is also supplied here for running CRED on more hardware-limited systems (e.g., those without access to a lot of RAM). `BCRED` is written in Perl, and requires `samtools` as well as `Parallel::ForkManager` (a Perl module available on CPAN) for operation; this will split the input BAM pairs per chromosome, dispatch `CRED` calls, and merge the result. Multithreading support is also made possible via `Parallel::ForkManager`.
@@ -64,7 +64,7 @@ Optional :
   -k                 Evaluate site significance with Kolmogorov-Smirnov
 Reminders:
    1. BAM files must be sorted.
-   2. Use a pipe (\">\") to capture CRED output.
+   2. Use a pipe (">") to capture CRED output.
 ```
 
 

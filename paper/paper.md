@@ -7,28 +7,23 @@ tags:
 authors:
  - name: Jason Lin
    orcid: 0000-0002-8086-3185
-   affiliation: 1 2
+   affiliation: "1, 2"
  - name: Tony Kuo
    orcid: 0000-0003-2358-7919
-   affiliation: 2
+   affiliation: "2"
  - name: Paul Horton
    orcid: 0000-0002-0916-7339
-   affiliation: 3 4
+   affiliation: "3"
  - name: Hiroki Nagase
    orcid: 0000-0002-3992-5399
-   affiliation: 1
+   affiliation: "1"
 affiliations:
  - name: Laboratory of Cancer Genetics, Chiba Cancer Center Research Institute, Chuo-ku, Chiba, Japan
    index: 1
-affiliations:
  - name: Artificial Intelligence Research Center, National Institute of Advanced Industrial Science and Technology (AIST), Koto-ku, Tokyo, Japan
    index: 2
-affiliations:
- - name: Institute of Medical Informatics, National Cheng Kung University, Tainan, Taiwan
+ - name: Institute of Medical Informatics and the Department of Computer Science and Information Engineering, National Cheng Kung University, Tainan, Taiwan
    index: 3
-affiliations:
- - name: Department of Computer Science and Information Engineering, National Cheng Kung University, Tainan, Taiwan
-   index: 4
 date: 10 April 2019
 bibliography: paper.bib
 ---
@@ -48,7 +43,7 @@ This workflow, however, required extensive pre- and post-processing of data, as 
 ![Example of a Chem-seq site by ``CRED`` and MACS in Integrated Genome Viewer (IGV)](figs/fig.png)
 *Figure*: ``Example of a Chem-seq site by CRED and MACS in Integrated Genome Viewer (IGV).`` LS180 cells were treated with either a 9-bp biotinylated PI polyamide ("treatment") or DMSO ("control") and affinity precipitated with streptavidin. After Ion Torrent sequencing, reads were aligned with TMAP, followed by peak calling with either MACS 1.4.2 or CRED. Regions boxed with red dotted lines indicate putative regions of positive enrichment identified by CRED; Top track, treatment; bottom track, control.
 
-``CRED`` accepts a pair of treatment ('pulldown') and control ('input') coordinate-sorted and indexed BAM files from Chem-seq experiments. The program then compiles a list of preliminary candidates and tests such regions against the hypothesis that there is significant enrichment compared to the same site in a control track, either via Welch's ``t`` [Majumder and Bhattacharjee 1973] or Kolmogorov-Smirnov test [Durbin 1973]. The output is reported in a BED-like format to standard output, so they can be easily piped into a Perl array or R vector within a larger workflow script. This output format allows results to be easily visualized in genome browsers such as IGV and requires no additional reformatting. While designed with processing Chem-seq data in mind, ``CRED`` may also be compatible with other NGS applications in cases where reads may be too heterogenous to fit a strict Poisson mixture model.
+``CRED`` accepts a pair of treatment ('pulldown') and control ('input') coordinate-sorted and indexed BAM files from Chem-seq experiments. The program then compiles a list of preliminary candidates and tests such regions against the hypothesis that there is significant enrichment compared to the same site in a control track, either via Welch's *t* [Majumder and Bhattacharjee 1973] or Kolmogorov-Smirnov test [Durbin 1973]. The output is reported in a BED-like format to standard output, so they can be easily piped into a Perl array or R vector within a larger workflow script. This output format allows results to be easily visualized in genome browsers such as IGV and requires no additional reformatting. While designed with processing Chem-seq data in mind, ``CRED`` may also be compatible with other NGS applications in cases where reads may be too heterogenous to fit a strict Poisson mixture model.
 
 # Acknowledgement
 This work was supported by Grant-in-Aids for Scientific Research B and for Young Scientists B from Japan Society for the Promotion of Science (JP17H03602 to HN and JP17K15047 to JL) as well as Japan Agency for Medical Research and Development (AMED, JP17cm0106510, JP17ck0106263 and JP17ck0106356 to HN; JP18ck0106422 to HN and JL). High-performance computing was provided by the Institute of Medical Science at the University of Tokyo, and AIST Artificial Intelligence Research Center (AIST-AIRC, courtesy of PH). We would also like to thank Prof. Seiya Imoto at the Institute of Medical Science, the University of Tokyo, for providing supercomputing support and technical advice on Chem-seq. JL held a visiting appointment at AIST-AIRC for the duration of this project.
