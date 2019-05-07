@@ -3,7 +3,6 @@
 **C**hem-seq **R**ead **E**nrichment **D**iscovery (__CRED__) is a simple peak caller written in C for identifying non-canonical feature enrichments in paired Chem-seq data.
 
 [![status](http://joss.theoj.org/papers/f9d17ffdcd6b02ef2f2a5eaa3638c294/status.svg)](http://joss.theoj.org/papers/f9d17ffdcd6b02ef2f2a5eaa3638c294)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2667613.svg)](https://doi.org/10.5281/zenodo.2667613)
 
 04/10/2019 initial commit/*JOSS* submission<br>
 05/04/2019 *JOSS* peer review completed<br>
@@ -98,9 +97,3 @@ cred -t samples/simReads_hg19_treatment-chr20.bam -c samples/simReads_hg19_contr
 ```
 
 If BEDTools is installed, intersecting the resultant BEDs with the true positives would reveal that the CRED results includes more sites containing the positive spikes (700+) compared to MACS (~500). These regions can also be confirmed by IGV (see `results_sample_igv_snapshot.png` for an example). On a 3.5GHz 6-core Mac Pro with 64GB of RAM running MacOS 10.14.4, the CRED run completed ~20 seconds for CRED and about a minute for MACS.
-
-### Citation
-
-If you use CRED in your research, please cite the following in your publication:
-
-Jason Lin, Tony Kuo, Paul Horton and Hiroki Nagase, "CRED: a rapid peak caller for Chem-seq data." *Journal of Open Source Software*, 2019.
