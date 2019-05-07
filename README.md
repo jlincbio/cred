@@ -6,7 +6,6 @@
 
 04/10/2019 initial commit/*JOSS* submission<br>
 05/04/2019 *JOSS* peer review completed<br>
-05/06/2019 updated documentation to reflect citation and submission status<br>
 
 ### Installation
 
