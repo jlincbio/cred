@@ -2,7 +2,7 @@
 
 **C**hem-seq **R**ead **E**nrichment **D**iscovery (__CRED__) is a simple peak caller written in C for identifying non-canonical feature enrichments in paired Chem-seq data.
 
-Publication status:
+Publication status:<br>
 [![status](http://joss.theoj.org/papers/f9d17ffdcd6b02ef2f2a5eaa3638c294/status.svg)](http://joss.theoj.org/papers/f9d17ffdcd6b02ef2f2a5eaa3638c294)
 
 04/10/2019 initial commit/*JOSS* submission<br>
@@ -72,7 +72,7 @@ Reminders:
    2. Use a pipe (">") to capture CRED output.
 ```
 
-The initial release is archived at Zenodo:
+The initial release is archived at Zenodo:<br>
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2667613.svg)](https://doi.org/10.5281/zenodo.2667613)
 
 
