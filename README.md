@@ -104,4 +104,4 @@ If BEDTools is installed, intersecting the resultant BEDs with the true positive
 ### Citation
 If you use CRED in your research, please cite the following publication:
 
-J. Lin, T. Kuo, P. Horton, H. Nagase, "CRED: a rapid peak caller for Chem-seq data" *Journal of Open Source Software* 4(37): 1423, 2019. DOI: 10.21105/joss.01423
+J. Lin, T. Kuo, P. Horton, H. Nagase, "CRED: a rapid peak caller for Chem-seq data." *Journal of Open Source Software* 4(37): 1423, 2019. DOI: 10.21105/joss.01423
