@@ -2,10 +2,12 @@
 
 **C**hem-seq **R**ead **E**nrichment **D**iscovery (__CRED__) is a simple peak caller written in C for identifying non-canonical feature enrichments in paired Chem-seq data.
 
+Publication status:
 [![status](http://joss.theoj.org/papers/f9d17ffdcd6b02ef2f2a5eaa3638c294/status.svg)](http://joss.theoj.org/papers/f9d17ffdcd6b02ef2f2a5eaa3638c294)
 
 04/10/2019 initial commit/*JOSS* submission<br>
 05/04/2019 *JOSS* peer review completed<br>
+05/08/2019 formal publication in *JOSS*
 
 ### Installation
 
@@ -70,6 +72,9 @@ Reminders:
    2. Use a pipe (">") to capture CRED output.
 ```
 
+The initial release is archived at Zenodo:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2667613.svg)](https://doi.org/10.5281/zenodo.2667613)
+
 
 ### Output
 The current version of CRED writes to STDOUT so the results can be streamed in-line for subsequent tasks, e.g. checking for motif intersects with BEDTools and immediate compressing the results with GZip. To store the output to a file, use a pipe (">"). The output is presented in a BED-like format directly interpretable in genome browsers such as IGV. The columns are as follows:
@@ -96,3 +101,9 @@ cred -t samples/simReads_hg19_treatment-chr20.bam -c samples/simReads_hg19_contr
 ```
 
 If BEDTools is installed, intersecting the resultant BEDs with the true positives would reveal that the CRED results includes more sites containing the positive spikes (700+) compared to MACS (~500). These regions can also be confirmed by IGV (see `results_sample_igv_snapshot.png` for an example). On a 3.5GHz 6-core Mac Pro with 64GB of RAM running MacOS 10.14.4, the CRED run completed ~20 seconds for CRED and about a minute for MACS.
+
+
+### Citation
+If you use CRED in your research, please cite the following publication:
+
+J. Lin, T. Kuo, P. Horton, H. Nagase, "CRED: a rapid peak caller for Chem-seq data" *Journal of Open Source Software* 4(37): 1423, 2019. DOI: 10.21105/joss.01423
