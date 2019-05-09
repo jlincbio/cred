@@ -75,7 +75,7 @@ The initial release is archived at Zenodo:<br>
 
 
 ### Output
-The current version of CRED writes to STDOUT so the results can be streamed in-line for subsequent tasks, e.g. checking for motif intersects with BEDTools and immediate compressing the results with GZip. To store the output to a file, use a pipe (">"). The output is presented in a BED-like format directly interpretable in genome browsers such as IGV. The columns are as follows:
+The current version of CRED writes to STDOUT so the results can be streamed in-line for subsequent tasks, e.g. checking for motif intersects with BEDTools and immediately compressing the results with GZip. To store the output to a file, use a pipe (">"). The output is presented in a BED-like format directly interpretable in genome browsers such as IGV. The columns are as follows:
 
 1. Chromosome ID
 2. Start of the site
