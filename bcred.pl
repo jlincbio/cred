@@ -159,7 +159,7 @@ foreach my $j (sort {$a <=> $b} (keys %contig)) {
 	}
 	unlink $control{$k};
 	unlink $treatment{$k};
-	$pm->finish($k, \@cstats);
+	$pm->finish($j, \@cstats);
 }
 $pm->wait_all_children;
 
