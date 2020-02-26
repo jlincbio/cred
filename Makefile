@@ -25,7 +25,7 @@ HTSLIB:
 mac: darwinprep all
 	
 darwinprep:
-	cd $(HTSDIR) && make CFLAGS=$(OSET)
+	cd $(HTSDIR) && $(MAKE) CFLAGS=$(OSET)
 	cd $(LOCAL_DIR)
 
 install:
@@ -34,7 +34,7 @@ install:
 	chmod +x $(PREFIX)/bcred
 
 clean:
-	cd $(HTSDIR) && make clean
+	cd $(HTSDIR) && $(MAKE) clean
 	rm -f $(LOCAL_DIR)/$(MAIN) *.o
 	rm -rf $(LOCAL_DIR)/$(MAIN).dSYM
 	rm -f $(LOCAL_DIR)/bcred
