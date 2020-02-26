@@ -9,20 +9,21 @@
 
 ### Installation
 
-CRED requires a compatible compiler (e.g. GCC), and utilizes [HTSlib](http://www.htslib.org/) to process BAM files. Please clone the repo inside CRED before compiling. In some cases, e.g. certain macOS systems, an additional call of `make` within `htslib/` may be required to complete compilation.
+CRED requires a compatible compiler (e.g. GCC), and utilizes [HTSlib](http://www.htslib.org/) to process BAM files. Please clone the repo inside CRED before compiling.
 
-Use `PREFIX` to specify a directory to install CRED with `make install`:
-
-Sample installation guide:
+Sample installation:
 ```
-export INSTALL_PREFIX=/usr/local/bin # or a different location
 git clone https://github.com/jlincbio/cred.git
 cd cred
 git clone https://github.com/samtools/htslib.git
-make # or make darwin if you are using macOS
+make # or "make darwin" if macOS
+export INSTALL_PREFIX=/usr/local/bin
 make PREFIX=$INSTALL_PREFIX install
 ```
-
+Notes:
+1. For macOS systems, replace `make` with `make darwin`. Alternatively, enter  `htslib/` and invoke `make`.
+2. `make clean` will also clean the HTSlib directory. 
+3. use `PREFIX` to specify a destination to install CRED
 
 ### Inputs and Parameters
 ```
