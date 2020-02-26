@@ -21,8 +21,8 @@ make PREFIX=$INSTALL_PREFIX install
 ```
 Notes:
 1. For macOS systems, replace `make` with `make mac`. Alternatively, enter  `htslib/` and invoke `make`.
-2. `make clean` will also clean the HTSlib directory. 
-3. use `PREFIX` to specify a destination to install CRED
+2. For troubleshooting, `make clean` will also clean the HTSlib directory. 
+3. use `PREFIX` to specify a destination to install CRED.
 
 ### Inputs and Parameters
 ```
