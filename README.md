@@ -19,9 +19,7 @@ export INSTALL_PREFIX=/usr/local/bin # or a different location
 git clone https://github.com/jlincbio/cred.git
 cd cred
 git clone https://github.com/samtools/htslib.git
-cd htslib && make # required on macOS 10.14 (GNU Make 3.81)
-cd ..
-make
+make # or make darwin if you are using macOS
 make PREFIX=$INSTALL_PREFIX install
 ```
 
