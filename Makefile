@@ -22,9 +22,9 @@ all: HTSLIB
 HTSLIB:
 	$(MAKE) -C $(HTSDIR)/
 
-darwin: macprep all
+mac: darwinprep all
 	
-macprep:
+darwinprep:
 	cd $(HTSDIR) && make CFLAGS=$(OSET)
 	cd $(LOCAL_DIR)
 

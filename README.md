@@ -14,14 +14,13 @@ CRED requires a compatible compiler (e.g. GCC), and utilizes [HTSlib](http://www
 Sample installation:
 ```
 git clone https://github.com/jlincbio/cred.git
-cd cred
-git clone https://github.com/samtools/htslib.git
-make # or "make darwin" if macOS
+cd cred && git clone https://github.com/samtools/htslib.git
+make # or "make mac" if macOS
 export INSTALL_PREFIX=/usr/local/bin
 make PREFIX=$INSTALL_PREFIX install
 ```
 Notes:
-1. For macOS systems, replace `make` with `make darwin`. Alternatively, enter  `htslib/` and invoke `make`.
+1. For macOS systems, replace `make` with `make mac`. Alternatively, enter  `htslib/` and invoke `make`.
 2. `make clean` will also clean the HTSlib directory. 
 3. use `PREFIX` to specify a destination to install CRED
 
